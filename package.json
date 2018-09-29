@@ -1,0 +1,63 @@
+{
+  "name": "gitlab-server-status-to-discord",
+  "version": "0.0.1",
+  "description": "SEE README.md",
+  "keywords": [
+    "gitlab",
+    "backup",
+    "discord",
+    "webhook"
+  ],
+  "homepage": "https://github.com/VdustR/gitlab-server-status-to-discord",
+  "bugs": {
+    "url": "https://github.com/VdustR/gitlab-server-status-to-discord/issues",
+    "email": "VdustR@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ViPro",
+    "email": "VdustR@gmail.com",
+    "url": "https://VdustR.github.io"
+  },
+  "main": "src/app.js",
+  "bin": {
+    "gss2d": "./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:VdustR/gitlab-server-status-to-discord.git"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "start": "env-cmd .env.local node ./src/app.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "date-fns": "^2.0.0-alpha.20",
+    "decimal.js": "^10.0.1",
+    "dotenv": "^6.0.0",
+    "env-cmd": "^8.0.2",
+    "filesize": "^3.6.1",
+    "filesize-parser": "^1.5.0",
+    "is-regexp-string": "^1.0.1",
+    "node-df": "^0.1.4",
+    "pretty-ms": "^4.0.0",
+    "regex-parser": "^2.2.9",
+    "timestring": "^5.0.1"
+  },
+  "devDependencies": {
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.6.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
